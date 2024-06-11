@@ -1,15 +1,4 @@
-<?php
-session_start();
-$dominio_especifico = "exploraeducolombia.com.co";
-if (isset($_SESSION['Email'])) {
-  if (strpos($_SESSION['Email'], "@" . $dominio_especifico) == false) {
-    header("Location: paginas/inicio.php");
-  } else {
-    header("location: Funcionarios/inicio.php");
-  }
-}
 
-?>
 <!DOCTYPE html>
 <html lang="es">
 
